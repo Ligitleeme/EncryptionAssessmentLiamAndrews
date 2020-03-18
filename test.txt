@@ -1,0 +1,11 @@
+Top 11 Programming Languages 2117 (hackernoon.com)
+1- Python - Python Software Foundation
+2- C - Dennis Ritchie & Bell Labs
+3- Java - Oracle Corporation
+4- C++ - Bell Labs
+5- C# - Microsoft
+6- R - R Core Team
+7- JavaScript - Netscape
+8- PHP - Zend Technologies
+9- Go - Google
+11 Swift - AppleEmpty
