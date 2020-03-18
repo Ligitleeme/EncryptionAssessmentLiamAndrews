@@ -17,8 +17,6 @@ def getEncryptType():
         else:
             print('Enter either "caesar" or "c" or "polyalphabetic" or "p"')
 
-
-#🅱️
 def caesarcipher():
     Secure = Security()
     mode = Secure.getMode()
