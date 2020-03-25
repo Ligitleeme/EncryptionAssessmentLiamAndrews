@@ -6,7 +6,6 @@ def getEncryptType():
     while loop == True:
         print("Which encryption method would you like to use?")
         encryptmode = input().lower()
-
         if encryptmode in ['caesar', 'c', 'polyalphabetic', 'p']:
             if encryptmode == 'caesar' or encryptmode == 'c':
                 caesarcipher()
@@ -16,6 +15,7 @@ def getEncryptType():
                 loop = False
         else:
             print('Enter either "caesar" or "c" or "polyalphabetic" or "p"')
+
 
 def caesarcipher():
     Secure = Security()
@@ -53,7 +53,6 @@ def polyalphabetic():
 
     if mode == 'd' or mode =='decrypt':
         translated = Secure.PolySubDecryptor(mode)
-        f5 = open("c:/Users/ligit/Desktop/Techtorium/PyhtonAssesment/Polysub_Encrypted.txt" , "w")
         f5 = open("c:/Users/ligit/Desktop/Techtorium/PyhtonAssesment/Polysub_Decrypted.txt" , "w")
         f5.write(translated)
         f5.close()

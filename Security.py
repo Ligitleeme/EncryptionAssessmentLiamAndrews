@@ -2,7 +2,7 @@ class Security:
     SYMBOLS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\n ~`!@#$%^&*()_-+=<>,.?/\|[]}{:;" #Defines symbol list for caeser cipher
     MAX_KEY_SIZE = len(SYMBOLS) #Assigns a number to amount of characters in the symbol list
 
-    def __init_(self):
+    def __init_(self): 
         print("")
 
     def getMode(self):
@@ -91,10 +91,8 @@ class Security:
         if mode == 'd' or mode =='decrypt':
             translated = ''
             displacement_word = input("Enter displacement word: ")
-            f4 = open("c:/Users/ligit/Desktop/Techtorium/PyhtonAssesment/output.txt" , "r")
+            f4 = open("c:/Users/ligit/Desktop/Techtorium/PyhtonAssesment/Polysub_Encrypted.txt" , "r")
             main_body = f4.read()
-
-            f5 = open("c:/Users/ligit/Desktop/Techtorium/PyhtonAssesment/test.txt" , "w")
             new_word = ""
 
             displacement_list = []
@@ -109,7 +107,7 @@ class Security:
                 old_value = encrypt_letter_to_num[x]
                 new_value = old_value - displacement_list[displacement_list_position_count]
                 while new_value < 0:
-                    new_value += 32
+                    new_value += 84
                 new_word += encrypt_num_to_letter[new_value]
                 displacement_list_position_count += 1
             translated = new_word

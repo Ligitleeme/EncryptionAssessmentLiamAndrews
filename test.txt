@@ -8,4 +8,4 @@ Top 11 Programming Languages 2117 (hackernoon.com)
 7- JavaScript - Netscape
 8- PHP - Zend Technologies
 9- Go - Google
-11 Swift - AppleEmpty
+11 Swift - Apple
