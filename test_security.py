@@ -21,8 +21,6 @@ def test_CaesarDecrypt_2():
     assert temp != "abc"
 
 
-
-# Poly pytest
 def test_PolyEncrypt_1():
     s = Security.Security()
     temp = s.PolySubEncryptor("p")
