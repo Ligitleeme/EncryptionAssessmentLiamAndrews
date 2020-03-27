@@ -25,20 +25,20 @@ def test_CaesarDecrypt_2():
 # Poly pytest
 def test_PolyEncrypt_1():
     s = Security.Security()
-    temp = s.PolySubEncryptor("c", "abc")
+    temp = s.PolySubEncryptor("p")
     assert type(temp) == str
 
 def test_PolyEncrypt_2():
     s = Security.Security()
-    temp = s.PolySubEncryptor("c", "abc")
+    temp = s.PolySubEncryptor("p")
     assert temp != "abc"
 
 def test_PolyDecrypt_1():
     s = Security.Security()
-    temp = s.PolySubDecryptor("c")
+    temp = s.PolySubDecryptor("p")
     assert type(temp) == str
 
 def test_PolyDecrypt_2():
     s = Security.Security()
-    temp = s.PolySubDecryptor("c")
+    temp = s.PolySubDecryptor("p")
     assert temp != "abc"
